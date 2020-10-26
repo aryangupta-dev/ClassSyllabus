@@ -5,6 +5,9 @@
  *   File: MultiThreading.java
  */
 
-public class MultiThreading {
+public class MultiThreading implements Runnable {
+    @Override
+    public void run() {
 
+    }
 }
