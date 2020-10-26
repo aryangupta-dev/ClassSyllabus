@@ -6,8 +6,19 @@
  */
 
 public class MultiThreading implements Runnable {
+    public final static int limit = 10;
+    public final Thread thread;
+
+    public MultiThreading() {
+        thread = new Thread(this, "t2");
+    }
+
+    public Thread getThread() {
+        return thread;
+    }
+
     @Override
     public void run() {
-
+        System.out.println();
     }
 }
