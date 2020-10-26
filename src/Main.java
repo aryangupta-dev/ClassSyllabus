@@ -5,8 +5,10 @@
  *   File: Main.java
  */
 
+
 public class Main {
     public static void main(String[] args) {
-
+        MultiThreading object = new MultiThreading();
+        object.run();
     }
 }

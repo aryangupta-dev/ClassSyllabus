@@ -19,7 +19,7 @@ public class MultiThreading implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("The thread" + thread.getName() + "has started.");
+        System.out.println("The thread " + thread.getName() + " has started.");
         for (int index = 0; index < limit; index++) {
             System.out.println(thread.getName() + ": " + index);
             try {
@@ -28,6 +28,6 @@ public class MultiThreading implements Runnable {
                 System.err.print(e.getMessage());
             }
         }
-        System.out.println("The thread" + thread.getName() + "has closed.");
+        System.out.println("The thread " + thread.getName() + " has closed.");
     }
 }
