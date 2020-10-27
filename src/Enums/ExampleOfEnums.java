@@ -7,16 +7,20 @@
 
 package Enums;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.Scanner;
-
 public class ExampleOfEnums {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String mnth = sc.nextLine().trim().toUpperCase();
+        int mnth = new GregorianCalendar().get(Calendar.MONTH);
+        String[] totalmonths = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+        };
         int currentDate = (int) (Math.random() * 31 + 1);
         System.out.println("Current date " + currentDate);
         sc.close();
-        Months obj = Months.valueOf(mnth);
+        String monthName = totalmonths[mnth].toUpperCase();
+        Months obj = Months.valueOf(monthName);
         int remainDays = 0;
         switch (obj) {
             case JANUARY:
