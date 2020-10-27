@@ -12,7 +12,13 @@ public enum Months {
     SEPTEMBER(30), OCTOBER(31), NOVEMBER(30), DECEMBER(31);
     public int noOfDaysInMonth;
 
+
     Months(int noOfDaysInMonth) {
         this.noOfDaysInMonth = noOfDaysInMonth;
+    }
+
+
+    public int getNoOfDaysInMonth() {
+        return noOfDaysInMonth;
     }
 }
