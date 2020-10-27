@@ -24,8 +24,12 @@ public class ExampleOfEnums {
                 System.out.println("Remaining days " + remainDays);
                 break;
             case FEBRUARY:
-                remainDays = obj.getNoOfDaysInMonth() - currentDate;
-                System.out.println("Remaining days " + remainDays);
+                if (obj.getNoOfDaysInMonth() > currentDate) {
+                    remainDays = obj.getNoOfDaysInMonth() - currentDate;
+                    System.out.println("Remaining days " + remainDays);
+                } else
+                    System.out.println(0);
+
                 break;
             case MARCH:
                 remainDays = obj.getNoOfDaysInMonth() - currentDate;
