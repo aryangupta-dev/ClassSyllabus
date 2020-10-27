@@ -7,6 +7,13 @@
 
 package Enums;
 
-public class ExampleOfEnums {
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
+public class ExampleOfEnums {
+    public static void main(String[] args) {
+        String month = String.valueOf(new GregorianCalendar().get(Calendar.MONTH));
+        int currentDate = (int) (Math.random() * 31 + 1);
+
+    }
 }
