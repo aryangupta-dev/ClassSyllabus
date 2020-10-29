@@ -9,6 +9,8 @@
 public class Main {
     public static void main(String[] args) {
         MultiThreading object = new MultiThreading();
-        object.run();
+        object.getThread().start();
+        thrd obj = new thrd();
+        obj.start();
     }
 }

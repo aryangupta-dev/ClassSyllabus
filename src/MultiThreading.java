@@ -10,6 +10,7 @@ public class MultiThreading implements Runnable {
     public final Thread thread;
 
     public MultiThreading() {
+
         thread = new Thread(this, "t2");
     }
 
@@ -23,7 +24,7 @@ public class MultiThreading implements Runnable {
         for (int index = 0; index < limit; index++) {
             System.out.println(thread.getName() + ": " + index);
             try {
-                Thread.sleep(1000L);
+                Thread.sleep(2000L);
             } catch (InterruptedException e) {
                 System.err.print(e.getMessage());
             }
