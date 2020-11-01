@@ -1,8 +1,8 @@
-/*   Created by IntelliJ IDEA.
+package ThreadingRunnableInterface;/*   Created by IntelliJ IDEA.
  *   Author: Aryan gupta (ag2602)
  *   Date: 10/29/2020
  *   Time: 11:07 AM
- *   File: thrd.java
+ *   File: ThreadingRunnableInterface.thrd.java
  */
 
 public class thrd extends Thread {
