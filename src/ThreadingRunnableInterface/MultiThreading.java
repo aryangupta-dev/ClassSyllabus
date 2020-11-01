@@ -11,7 +11,7 @@ public class MultiThreading implements Runnable {
 
     public MultiThreading() {
 
-        thread = new Thread(this, "t2");
+        thread = new Thread(this, "Rabbbit");
     }
 
     public Thread getThread() {
@@ -22,13 +22,13 @@ public class MultiThreading implements Runnable {
     public void run() {
         System.out.println("The thread " + thread.getName() + " has started.");
         for (int index = 0; index < limit; index++) {
-            System.out.println(thread.getName() + ": " + index);
+            System.out.println(thread.getName() + " milestone completed : " + index);
             try {
                 Thread.sleep(2000L);
             } catch (InterruptedException e) {
                 System.err.print(e.getMessage());
             }
         }
-        System.out.println("The thread " + thread.getName() + " has closed.");
+        System.out.println(thread.getName() + " has closed.");
     }
 }

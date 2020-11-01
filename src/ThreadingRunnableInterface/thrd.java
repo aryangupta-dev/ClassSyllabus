@@ -10,14 +10,17 @@ public class thrd extends Thread {
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName());
+        Thread.currentThread().setName("Tortoise");
+        System.out.println(Thread.currentThread().getName() + " has been started.");
         for (int i = 0; i < n; i++) {
-            System.out.println("Thread no" + i);
+            System.out.println("Tortoise milestone completed : " + i);
             try {
                 Thread.sleep(1500L);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+        System.out.println(Thread.currentThread().getName() + " has been closed");
+
     }
 }
