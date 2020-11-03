@@ -14,6 +14,8 @@ public class Main {
         StartGenClass<Double> obj1 = new StartGenClass<Double>();
         obj1.method1(45.4);
         BoundedClass<Integer> object = new BoundedClass<>();
+        System.out.println(object.addition(45, 45));
+
 
     }
 }

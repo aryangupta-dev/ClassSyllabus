@@ -8,5 +8,8 @@
 package Genrics;
 
 public class BoundedClass<Type extends Number> {
-
+public int addition(int a, int b) {
+    int sum = a + b;
+    return sum;
+}
 }
