@@ -8,5 +8,8 @@
 package Genrics;
 
 public class GenMethod {
-
+    public <Type extends Number> int divisor(int a, int b) {
+        int quotient = a / b;
+        return quotient;
+    }
 }
