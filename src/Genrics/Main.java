@@ -15,8 +15,5 @@ public class Main {
         obj1.method1(45.4);
         BoundedClass<Integer> object = new BoundedClass<>();
         System.out.println(object.addition(45, 45));
-        GenMethod obj4 = new GenMethod();
-        System.out.println(obj4.divisor(42, 21));
-
     }
 }

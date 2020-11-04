@@ -7,9 +7,14 @@
 
 package Genrics;
 
-public class GenMethod {
-    public <Type extends Number> int divisor(int a, int b) {
-        int quotient = a / b;
-        return quotient;
+public class GenMethod<Type extends Number> {
+    private int rollNo;
+
+    public static <Type extends String> Type method2(Type rollNo) {
+        return rollNo;
+    }
+
+    public Type divisor(Type a) {
+        return a;
     }
 }
