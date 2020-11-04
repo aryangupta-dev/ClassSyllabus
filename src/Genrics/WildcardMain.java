@@ -15,6 +15,7 @@ public class WildcardMain {
         Wildcard<Double> objNum = new Wildcard<>(anoherNums);
         System.out.println(numbers.calculateAverage());
         System.out.println(objNum.calculateAverage());
+        System.out.println("No are same ????  " + numbers.comapareAverage(objNum));
 
     }
 }

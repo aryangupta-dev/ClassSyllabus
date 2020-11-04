@@ -30,7 +30,12 @@ public class Wildcard<Type extends Number> {
         return sum / numbers.length;
     }
 
-    public boolean comapareAverage(Wildcard<? extends Number> numbers) {
-        return this.calculateAverage() == numbers.calculateAverage();
+    public boolean comapareAverage(Wildcard<? extends Number> numb) {
+        if (this.calculateAverage().equals(numb.calculateAverage())) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 }
