@@ -15,12 +15,13 @@ public class ArrayLst {
         obj.add(56);
         obj.add(78);
         obj.add(65);
-        ArrayList<String> object = new ArrayList<>();
+        ArrayList<String> object = new ArrayList<>();//string type array.
         object.add("Aryan ");
         object.add("is ");
         object.add("not an engineer");
         object.add("just a robot");
-
+        System.out.println(obj);
+        System.out.println(object);
 
     }
 }
