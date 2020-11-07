@@ -9,7 +9,17 @@ import java.util.ArrayList;
 
 public class ArrayLst {
     public static void main(String[] args) {
-        ArrayList<Integer> obj = new ArrayList<>();
+        ArrayList<Integer> obj = new ArrayList<>();//dynamic array of integer type.
+        obj.add(45);
+        obj.add(12);
+        obj.add(56);
+        obj.add(78);
+        obj.add(65);
+        ArrayList<String> object = new ArrayList<>();
+        object.add("Aryan ");
+        object.add("is ");
+        object.add("not an engineer");
+        object.add("just a robot");
 
 
     }
