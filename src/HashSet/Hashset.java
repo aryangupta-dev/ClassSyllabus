@@ -12,6 +12,10 @@ import java.util.HashSet;
 public class Hashset {
     public static void main(String[] args) {
         HashSet<String> nameSet = new HashSet<>();
-
+        nameSet.add("aryan ");
+        nameSet.add("is ");
+        nameSet.add("not");
+        nameSet.add("good");
+        nameSet.add("at coding");
     }
 }
