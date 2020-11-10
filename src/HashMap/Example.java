@@ -19,5 +19,7 @@ public class Example {
         //printing in the collection like an array .
         System.out.println(studentRoll);
 
+        var entries = studentRoll.entrySet();
+
     }
 }
