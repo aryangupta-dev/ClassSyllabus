@@ -20,6 +20,10 @@ public class Example {
         System.out.println(studentRoll);
 
         var entries = studentRoll.entrySet();
+        var itr = entries.iterator();
+        while (itr.hasNext()) {
+            System.out.print(itr.next());
 
+        }
     }
 }
