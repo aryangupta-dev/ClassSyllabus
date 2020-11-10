@@ -16,5 +16,8 @@ public class Example {
         studentRoll.put(2, "Anamika");
         studentRoll.put(3, "Ram");
         studentRoll.put(4, "chacha");
+        //printing in the collection like an array .
+        System.out.println(studentRoll);
+
     }
 }
