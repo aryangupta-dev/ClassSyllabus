@@ -12,6 +12,9 @@ import java.util.HashMap;
 public class Example {
     public static void main(String[] args) {
         HashMap<Integer, String> studentRoll = new HashMap<>();
-
+        studentRoll.put(1, "Ankit");
+        studentRoll.put(2, "Anamika");
+        studentRoll.put(3, "Ram");
+        studentRoll.put(4, "chacha");
     }
 }
