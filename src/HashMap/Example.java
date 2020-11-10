@@ -18,7 +18,7 @@ public class Example {
         studentRoll.put(4, "chacha");
         //printing in the collection like an array .
         System.out.println(studentRoll);
-
+        //Iterating it one by one with the help of Iterator class.
         var entries = studentRoll.entrySet();
         var itr = entries.iterator();
         while (itr.hasNext()) {
