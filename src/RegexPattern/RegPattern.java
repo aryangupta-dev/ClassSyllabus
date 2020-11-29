@@ -20,7 +20,7 @@ public class RegPattern {
                 "Input!",
                 JOptionPane.PLAIN_MESSAGE
         );
-        Matcher match = pattern.matcher("5671 8481 8453");
+        Matcher match = pattern.matcher(input);
         if (match.matches()) {
             JOptionPane.showMessageDialog(
                     null,
