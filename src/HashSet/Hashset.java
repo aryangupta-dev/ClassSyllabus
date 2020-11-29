@@ -19,7 +19,5 @@ public class Hashset {
         nameSet.add("at coding");
         nameSet.add("good");
         System.out.println(nameSet);//it will print the strings according to ascii preferences.
-
-
     }
 }
