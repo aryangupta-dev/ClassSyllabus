@@ -7,13 +7,35 @@
 
 package RegexPattern;
 
+import javax.swing.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegPattern {
     public static void main(String[] args) {
         Pattern pattern = Pattern.compile("^\\d{4}[ ]\\d{4}[ ]\\d{4}$");
+        String input = JOptionPane.showInputDialog(
+                null,
+                "Input the Aadhar no.",
+                "Input!",
+                JOptionPane.PLAIN_MESSAGE
+        );
         Matcher match = pattern.matcher("5671 8481 8453");
-        System.out.println(match.matches());
+        if (match.matches()) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "The string is passed",
+                    "PASSED",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+        } else {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "The string is failed",
+                    "FAILED",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+        }
+
     }
 }
