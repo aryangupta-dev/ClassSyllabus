@@ -14,7 +14,12 @@ public class GenMethod<Type extends Number> {
         return rollNo;
     }
 
-    public Type divisor(Type a) {
+    static <Type extends Number> Type divisor(Type a) {
         return a;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(GenMethod.method2("12"));
+        System.out.println(divisor(16));
     }
 }

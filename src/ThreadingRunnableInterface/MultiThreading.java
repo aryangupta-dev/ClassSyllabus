@@ -10,8 +10,7 @@ public class MultiThreading implements Runnable {
     public final Thread thread;
 
     public MultiThreading() {
-
-        thread = new Thread(this, "Rabbbit");
+        thread = new Thread(this, "Rabbit");
     }
 
     public Thread getThread() {
