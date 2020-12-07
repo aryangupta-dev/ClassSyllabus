@@ -21,5 +21,12 @@ public class Lecture3rd {
                     i + 1, (float) (Math.random() * 10), "Name" + (i + 1)
             ));
         }
+        System.out.println("Total student with their cpi and name :");
+        System.out.println(studentList);
+        var stream = studentList.stream();
+        var topperStream = stream.filter(s -> s.getCpi() > 7.0);
+        System.out.println("Toppper student list: ");
+        topperStream.forEach(student -> System.out.println(student));
 
     }
+}
