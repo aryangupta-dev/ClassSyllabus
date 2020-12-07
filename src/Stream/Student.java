@@ -57,4 +57,10 @@ public class Student {
     public String toString() {
         return String.format("%d %s %.2f", rollNo, studentName, cpi);
     }
+
+    public Student(int rollNo, float cpi, String studentName) {
+        this.rollNo = rollNo;
+        this.cpi = cpi;
+        this.studentName = studentName;
+    }
 }
