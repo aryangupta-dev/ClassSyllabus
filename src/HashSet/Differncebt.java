@@ -21,11 +21,11 @@ public class Differncebt {
         //it will remove the duplicate string from the dynamic array.
         System.out.println(nameSet);
         ArrayList<String> nameSet2 = new ArrayList<>();
-        nameSet.add("aryan ");
-        nameSet.add("is ");
-        nameSet.add("not");
-        nameSet.add("good");
-        nameSet.add("good");
+        nameSet2.add("aryan ");
+        nameSet2.add("is ");
+        nameSet2.add("not");
+        nameSet2.add("good");
+        nameSet2.add("good");
         //it will take the duplicate string in the array
         System.out.println(nameSet2);
     }
